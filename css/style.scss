@@ -1,0 +1,44 @@
+@import "_null.scss";
+
+.wrapper {
+    overflow: hidden;
+    min-height: 100%;
+    display: flex;
+    flex-direction: column;
+}
+
+.main {
+    flex-grow: 1;
+}
+
+[class*="__container"] {
+    max-width: 1050px;
+    margin: 0 auto;
+    padding: 0 15px;
+}
+
+@media (max-width:1050px) {
+    [class*="__container"] {
+        max-width: 970px;
+    }
+}
+
+@media (max-width:991.98px) {
+    [class*="__container"] {
+        max-width: 750px;
+    }
+}
+
+@media (max-width:767.98px) {
+    [class*="__container"] {
+        max-width: none;
+    }
+}
+
+/* 
+*Размеры экранов
+Большие экраны - 1440px; 
+Маленькие экраны - не меньше 1024px;
+Планшеты - от 1024px до 768px;
+Мобильные устройствао - ниже 768px
+*/
